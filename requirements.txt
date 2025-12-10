@@ -1,0 +1,41 @@
+# ====================================
+# ECHO_TWIN_CORE Requirements (Python 3.11)
+# ====================================
+
+# Core math & data
+numpy>=1.25.0
+scipy>=1.12.0
+pandas>=2.1.0
+tqdm>=4.66.0
+
+# Audio processing
+librosa>=0.10.2
+soundfile>=0.12.1
+pydub>=0.25.1
+ffmpeg-python>=0.2.0
+
+# Deep learning stack (optional but used by EchoTwinModel)
+torch>=2.2.0
+torchaudio>=2.3.0
+
+# Visualization & utility
+matplotlib>=3.8.0
+coloredlogs>=15.0.1
+jsonschema>=4.19.0
+
+# Speech recognition options
+vosk>=0.3.45       # works offline, compatible with 3.11
+openai-whisper>=20231117  # optional online ASR
+
+# Optional NLP/metrics tools
+jiwer>=3.0.4
+
+# NOTE:
+# The internal watermarking in utils/watermark_utils.py replaces the need
+# for external audiowmark library.
+
+transformers>=4.44.0
+soundfile>=0.12.1
+gradio>=4.31.0
+
+sounddevice

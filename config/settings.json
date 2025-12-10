@@ -1,0 +1,44 @@
+{
+  "data": {
+    "raw_audio_dir": "./audio",
+    "processed_dir": "./data/processed",
+    "mels_dir": "./data/mels",
+    "transcript_csv": "./data/transcript.csv",
+    "sample_rate": 22050,
+    "n_mels": 80,
+    "hop_length": 256,
+    "win_length": 1024
+  },
+  "dataset": {
+    "type": "ljspeech",
+    "path": "D:/Datasets/LJSpeech/LJSpeech-1.1",
+    "metadata_file": "metadata.csv",
+    "audio_dir": "wavs",
+    "use_normalized_text": true
+  },
+  "model": {
+    "checkpoint_dir": "./models/checkpoints",
+    "architecture_file": "./models/model_architecture.py"
+  },
+  "training": {
+    "epochs": 250,
+    "batch_size": 32,
+    "learning_rate": 0.0003
+  },
+  "logging": {
+    "log_dir": "./logs",
+    "level": "INFO"
+  },
+  "paths": {
+    "mels_dir": "./data/mels",
+    "processed_dir": "./data/processed",
+    "checkpoints_dir": "./models/checkpoints",
+    "logs_dir": "./logs",
+    "raw_audio_dir": "./audio"
+  },
+  "assistant": {
+    "asr": "vosk",
+    "vosk_model_path": "assistant/vosk-model-small",
+    "tts_model": "facebook/mms-tts-eng"
+  }
+}
