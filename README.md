@@ -1,4 +1,4 @@
-# ECHO_TWIN_CORE — Train-from-scratch TTS Research Pipeline & Assistant
+# ECHO_TWIN_CORE — TTS Research Pipeline & Assistant
 
 A comprehensive audio processing, training, and synthesis framework that combines educational implementations with modern production-grade tools.
 
